@@ -14,8 +14,8 @@ module OmniContacts
         @authorize_path = "/o/oauth2/auth"
         @auth_token_path = "/o/oauth2/token"
         @scope = (args[3] && args[3][:scope]) || "https://www.googleapis.com/auth/contacts.readonly https://www.googleapis.com/auth/userinfo#email https://www.googleapis.com/auth/userinfo.profile"
-        @contacts_host = "www.google.com"
-        @contacts_path = "https://www.googleapis.com/auth/contacts"
+        @contacts_host = "www.googleapis.com"
+        @contacts_path = "/auth/contacts"
         @max_results =  (args[3] && args[3][:max_results]) || 100
         @self_host = "www.googleapis.com"
         @profile_path = "/oauth2/v3/userinfo"
